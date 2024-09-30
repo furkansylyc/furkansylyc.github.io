@@ -1,6 +1,6 @@
 # Furkan Söyleyici'nin Personal Blogu
 
-    **Bu blog, yazılım, teknoloji ve kişisel gelişim alanlarında deneyimlerimi ve düşüncelerimi paylaşmak amacıyla oluşturulmuştur.**
+    Bu blog, yazılım, teknoloji ve kişisel gelişim alanlarında deneyimlerimi ve düşüncelerimi paylaşmak amacıyla oluşturulmuştur. 
 
 ## Özellikler
     - Blog yazıları düzenli olarak güncellenir.
