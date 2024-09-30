@@ -1,4 +1,4 @@
-#Furkan Söyleyici'nin Personal Blogu**
+#Furkan Söyleyici'nin Personal Blogu
 
  Bu blog, yazılım, teknoloji ve kişisel gelişim alanlarında deneyimlerimi ve düşüncelerimi paylaşmak amacıyla oluşturulmuştur.
 
@@ -9,11 +9,10 @@
 -İletişim için link içeren butonlar.
 
 ##Blog Domaini
- furkansylyc.github.io
+    furkansylyc.github.io
 
 ##Kurulum
-
-Blogu yerel olarak çalıştırmak için aşağıdaki adımları izleyin:
+  Blogu yerel olarak çalıştırmak için aşağıdaki adımları izleyin:
 
 1. Repository'yi klonlayın:
    ```bash
