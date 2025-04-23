@@ -1,42 +1,414 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
+
 <head>
-   <link rel="icon" href="logo1.png" type="image/png">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My Personal Blog</title>
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furkan Söyleyici | CE Student</title>
+  <meta name="description" content="Personal website of Furkan.">
+  <link rel="icon" type="image/svg+xml" href="photos/fs-seffaf.png" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/animations.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
 </head>
+
 <body>
-   <nav>
+  <div id="cursor"></div>
+
+  <header id="header">
+    <div class="container header-container">
+      <a href="/" class="logo">FS</a>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Hakkında</a></li>
+          <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+          <li><a href="#projects" class="nav-link">Projeler</a></li>
+          <li><a href="#contact" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12 1V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12 21V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4.22 4.22L5.64 5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M18.36 18.36L19.78 19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M1 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M21 12H23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4.22 19.78L5.64 18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <nav>
       <ul>
-        <li><a href="https://github.com/furkansylyc" target="_blank">GitHub Sayfam</a></li>
-        <li><a href="https://www.linkedin.com/in/furkansylyc/" target="_blank">LinkedIn Profilim</a></li>
-       <li><a href="https://www.instagram.com/furkan.sylyc/" target="_blank">Instagram</a></li>
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">Hakkında</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Yetenekler</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projeler</a></li>
+        <li><a href="#contact" class="mobile-nav-link">İletişim</a></li>
       </ul>
-   </nav>
+    </nav>
+  </div>
 
-   <section>
-      <h1>Bloguma Hoşgeldiniz</h1>
-     <h2>Kimim ben</h2>
-      <p>Merhaba, ben Furkan. Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği 3.sınıf öğrencisiyim.</p>
-     <p>Stone Age adında modern görünümlü bir brick breaker oyunu yaptım.Yakında Play Store'da yayınlanacak.</p>
-     <p>Web kısmında ise Asım hocamızın önderliğinde kendimi geliştirerek ilerlemeyi ve şirketler için kurumsal web siteleri yapmayı isterim.</p>
-     <p>Siber güvenlik dalında ise Kali üzerinde kendi çapımda sızma girişimleri ve ağ saldırıları yapmaya çalışıyorum.</p>
-     <p>Amatör olarak Konya'daki kulübümde futbol oynuyordum.Ispartaya gelince bırakmak zorunda kaldım.</p>
-     <p>Yaklaşık 2 senedir de boks ile uğraşıyorum</p>
-     <h3>Hedeflerim</h3>
-       <p>Hedeflerime gelecek olursam Game Dev. mi yoksa Web Dev. veya Siber Güvenlik uzmanı mı olacağıma hala karar veremediğimden</p>
-     <p>bu dallar üzerinde bazı projeler geliştirmeye çalışarak ve iş imkanını da göz önünde bulundurup seçmeyi </p>
-     <h4>hangi dalı seçersem seçeyim o dalda yetkin bir mühendis olmak yegane hedefimdir.</h4>
-     </section>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content reveal-content">
+          <h1>Selam,ben <span class="highlight">Furkan</span></h1>
+          <h2>Jr Mobile Dev | CE Student</h2>
+          <p>Sezgisel ve ilgi çekici kullanıcı deneyimleri oluşturma konusunda tutkulu bir mobil geliştiriciyim. Yeni
+            teknolojileri keşfetmeyi ve mobil uygulamalarda mümkün olanın sınırlarını zorlamayı seviyorum.</p>
+          <p>Şu anda Bilgisayar Mühendisliği okuyorum ve alandaki becerilerimi ve bilgimi geliştirmek için çeşitli
+            projeler üzerinde çalışıyorum.</p>
+          <div class="cta-group">
+            <a href="#projects" class="button primary">Projeler</a>
+            <a href="#contact" class="button secondary">İletişim</a>
+          </div>
+        </div>
+        <div class="hero-image reveal-image">
+          <div class="image-container">
+            <img src="photos/1728326675479.jpg" alt="furkan" />
+          </div>
+          <div class="floating-element e1"></div>
+          <div class="floating-element e2"></div>
+          <div class="floating-element e3"></div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Kaydır</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M19 12L12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Hakkında</span>
+          <h2>Kimim</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-image reveal-image">
+            <img src="photos/f.jpg" alt="furkan" />
+          </div>
+          <div class="about-text reveal-content">
+            <p>Son birkaç yıldır, bilgisayar mühendisliği eğitimi alırken, farklı projeler üzerinde çalışarak
+              becerilerimi geliştirmeye odaklandım. Hem öğrenimime devam ederken hem de kişisel projelerimle kendimi
+              sürekli olarak geliştirmeyi amaçlıyorum.</p>
+            <p>Benim yaklaşımım, kullanıcı deneyimini ön planda tutarak, basit ama etkili tasarımlar yaratmak. Yeni
+              teknolojilere olan ilgimle, gelişen trendleri takip ederek, her zaman yenilikçi çözümler üretmeye
+              çalışıyorum.</p>
+            <p>Boş zamanlarımda futbol oynuyor, yeni yazılım dillerini keşfetmekten keyif alıyor ve farklı projelerle
+              deneyimlerimi arttırmaya çalışıyorum.</p>
+            <div class="stats-container">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Yıl Yazılım Deneyimi</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Tamamlanan Projeler</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Yetenekler</span>
+          <h2>Benim Yeteneklerim</h2>
+        </div>
+        <div class="skills-content">
+          <div class="skills-category reveal-content">
+            <h3>Mobil ve Backend Geliştirme</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Unity</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Java</span>
+                  <span class="skill-percentage">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Kotlin</span>
+                  <span class="skill-percentage">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category reveal-content delay-1">
+            <h3>Web Geliştirme</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>HTML/CSS</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>JavaScript</span>
+                  <span class="skill-percentage">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>React</span>
+                  <span class="skill-percentage">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category reveal-content delay-2">
+            <h3>Araçlar</h3>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <span>Android Studio</span>
+              </div>
+              <div class="tool-item">
+                <span>IntelliJ IDEA</span>
+              </div>
+              <div class="tool-item">
+                <span>VM</span>
+              </div>
+              <div class="tool-item">
+                <span>Git</span>
+              </div>
+              <div class="tool-item">
+                <span>VS</span>
+              </div>
+              <div class="tool-item">
+                <span>Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Portfolyo</span>
+          <h2>Projeler</h2>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Tümü</button>
+          <button class="filter-btn" data-filter="mobile">Mobil Uygulamalar</button>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <img src="photos/en.png" alt="EasyNote Project" />
+            </div>
+            <div class="project-info">
+              <h3>EasyNote</h3>
+              <p>Not alma uygulaması, kullanımı kolay ve şık tasarımla geliştirilmiş.Hatırlatma özelliği ile
+                belirlediğiniz zamanda notunuz anında bildirim olarak hatırlatılır!</p>
+              <div class="project-tags">
+                <span>Mobil Uygulama</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <img src="photos/logo.png" alt="Stone Age Project" />
+            </div>
+            <div class="project-info">
+              <h3>Stone Age</h3>
+              <p>Taş Devri temalı ; tuğla kırma oyunu.Yeni grafikleriyle görsellik sunarken,oynanışıyla sizi eskiye
+                götürüyor</p>
+              <a href="https://play.google.com/store/apps/details?id=com.RaGame.StoneAge&utm_source=emea_Med"
+                class="button secondary">Google Play'den erişin</a>
+              <div class="project-tags">
+                <span>Mobil Uygulama</span>
+                <span>Oyun Geliştirme</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-   <footer>
-      <p>&copy; 2024 Furkan Söyleyici | 2221032052</p>
-   </footer>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">İletişim</span>
+          <h2>Freelance teklifleriniz için iletişimde kalın.</h2>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info reveal-content">
+            <p>Yapmak istedikleriniz veya merak ettikleriniz için</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+              </div>
+              <div class="contact-method">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div>
+                  <h4>Mail</h4>
+                  <a href="mailto:hello@johndoe.com">soyleyicifurkan@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div>
+                  <h4>Konum</h4>
+                  <p>Isparta,Türkiye</p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/furkansylyc/" class="social-link" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="https://github.com/furkansylyc" class="social-link" aria-label="GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                  <path
+                    d="M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22M9 19C4 20.5 4 16.5 2 16L9 19Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal-content delay-1">
+            <div class="form-group">
+              <label for="name">İsim</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Konu</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mesaj</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="button primary">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="/">Furkan Söyleyici</a>
+          <p>Bilgisayar Mühendisliği Öğrencisi | Mobil Geliştirici</p>
+          <p>İletişim için: <a href="mailto:soyleyicifurkan@gmail.com"> soyleyicifurkan@gmail.com</a></p>
+
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Hakkında</a></li>
+            <li><a href="#skills">Yetenekler</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Furkan Söyleyici.</p>
+        <a href="#" class="back-to-top">
+          Yukarıya çık
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
 </body>
+
 </html>
